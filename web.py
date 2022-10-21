@@ -28,5 +28,5 @@ def home():
         return render_template('alive.html')
     elif predicton[0]==0:
         return render_template('dead.html')
-app.run(debug=True)
+app.run(debug=True,host="0.0.0.0")
 
