@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="icon" href="..\static\images\ngo_logo.jpg"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <link rel="stylesheet" href="../static/css_file.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+</head>
+<body>
+   <div class="home" id="hom"> 
+    <img src="../static/images/image_1.jpg" alt="" class="home_image">
+    <div class="ul_home">
+    <ul class="index" id="navbar">
+        <li id="li_first"><a style="color:white;text-decoration: none;" href="#hom">HOME</a></li>
+        <li><a style="color:white;text-decoration: none;" href="#port">PROJECTS</a></li>
+        <li><a style="color:white;text-decoration: none;" href="#resum">RESUME</a></li>
+        <li><a style="color:white;text-decoration: none;" href="#about_id">ABOUT</a></li>
+        <li><a style="color:white;text-decoration: none;" href="#cont">CONTACT</a></li>
+    </ul>
+    </div>
+    <div class="intro">
+        <p id="intro1">Hello, I'm</p>
+        <p id="intro2">..Sameer Khan</p>
+        <p id="intro3"> AND THIS IS MY RESUME. . . .</p>
+    </div>
+   </div>
+   <div class="feature" id="port">
+     <h1 id="feature_heading">Featured <spam>Projects</spam></h1>
+     <ul id="feature_menu">
+        <li onclick="all_project()">All_Project</li>
+        <li onclick="machine_learning_Project()">machine_learning_Project</li>
+        <li onclick="github_project()">Github_project</li>
+        <li onclick="other()">Others</li>
+     </ul>
+     <div class="feature_contenor" id="contenor">
+          <div class="feature_content1">
+               <div class="movie_recomender  feature_image_hover" id="movie">
+                   <a href="{{url_for('index')}}"><img  onmouseover="feature_image(0)" onmouseleave="feature_image1(0)" class="feature_image" src="../static/images/movie_recomender.jpg" alt="movie movie_recomender"></a>
+                   <p class="feature_p">movie_recomender</p>
+               </div>
+               <div class="human_activity  feature_image_hover" id="human">
+                <a href="{{url_for('index')}}"><img  onmouseover="feature_image(1)" onmouseleave="feature_image1(1)" class="feature_image" src="../static/images/human-activity-recognition-s-742x455.jpeg" alt="human_activity_recogniser"></a>
+                   <p class="feature_p">human_activity_recogniser</p>
+               </div>
+               <div class="player_predictor  feature_image_hover" id="player">
+                <a href="https://github.com/itssameerkhan/indian_player_name_prediction"><img onmouseover="feature_image(2)" onmouseleave="feature_image1(2)" class="feature_image" src="../static/images/virat.jpg" alt="player_predictor"></a>
+                   <p class="feature_p">player_predictor</p>
+               </div>
+          </div>
+          <div class="feature_content2">
+               <div class="irish  feature_image_hover" id="irish_classification">
+                <a href="https://github.com/itssameerkhan/keras_flower_prediction"><img onmouseover="feature_image(3)" onmouseleave="feature_image1(3)" class="feature_image" src="../static/images/irish_clasification.png" alt="irish_clasification"></a>
+               <p class="feature_p">flower_classification</p>
+               </div>
+               <div class="titanic_life  feature_image_hover" id="titanic">
+                <a href="{{url_for('index2')}}"><img onmouseover="feature_image(4)" onmouseleave="feature_image1(4)" class="feature_image" src="../static/images/titanic.jpg" alt="titanic_life_predictor"></a>
+                <p class="feature_p">titanic_life_predictor</p>
+               </div>
+               <div class="sale_forcasting  feature_image_hover" id="sale">
+                <a href="{{url_for('index')}}"><img onmouseover="feature_image(5)" onmouseleave="feature_image1(5)" class="feature_image" src="../static/images/sale_forcasting.png" alt="sale_forcasting"></a>
+                <p class="feature_p">sale_forcasting</p>
+               </div>
+          </div>
+          <div class="feature_content2">
+            <div class="irish  feature_image_hover" id="number_prediction">
+             <a href="https://github.com/itssameerkhan/number_prediction"><img onmouseover="feature_image(6)" onmouseleave="feature_image1(6)" class="feature_image" src="../static/images/number_prediction.png" alt="number_prediction"></a>
+             <p class="feature_p">Number_prediction</p>
+            </div>
+            <div class="titanic_life  feature_image_hover" id="keras_image_prediction">
+             <a href="https://github.com/itssameerkhan/Cnn_image_prediction"><img onmouseover="feature_image(7)" onmouseleave="feature_image1(7)" class="feature_image" src="../static/images/truck_image.png" alt="titanic_life_predictor"></a>
+             <p class="feature_p">Keras_image_prediction</p>
+            </div>
+       </div>
+   </div>
+   <div class="resume" id="resum">
+    <h1>..My <span>Resume</span></h1>
+    <h3>Education</h3>
+    <div class="education">
+        <div class="university">
+            <i class="fa-solid fa-calendar-days" style="color:white;"><span>  2022-2024</span></i>
+            <p id="institute">International Institute of Information Technology (Bangalore).</p>
+            <p id="course">-Data science</p>
+            <p id="sub">-Probability and Statistics , Business Intelligence ,<br>  Programming Languages , Machine Learning ,<br> data visualization...</p>
+
+        </div>
+        <div class="ba">
+            <i class="fa-solid fa-calendar-days" style="color:white;"><span>  2019-2022</span></i>
+            <p id="collage">Purwanchal University.</p>
+            <p id="subject">-bachelor of arts.</p>
+            <p id="subj">-Geography , Politics , Economics , psychology...</p>
+        </div>
+        <div class="school">
+            <i class="fa-solid fa-calendar-days" style="color:white;"><span> ...-2019</span></i>
+            <p id="sch">RS convent Sainik School.</p>
+            <p class="strim">-High school.</p>
+            <p class="strim">-10+2(intermediate)</p>
+            <p id="subje">-Mathematics , Physics , chemestry , English , Computer science...</p>
+        </div>
+    </div>
+
+    <div class="skils">
+        <div class="skils1">
+          <h3 style="margin-top:50px;margin-left:20%;">My Skills</h3>
+  
+          <p style="color:#04AA6D ; margin-left:10%; width:400px;">HTML</p>
+          <div class="container">
+          <div class="skills html">90%</div>
+          </div>
+  
+          <p style="color:#2196F3 ; margin-left:10%;">CSS</p>
+          <div class="container">
+          <div class="skills css">80%</div>
+          </div>
+  
+          <p style="color: #f44336 ; margin-left:10%;">JavaScript</p>
+          <div class="container">
+          <div class="skills js">65%</div>
+          </div>
+  
+          <p <p style="color:  #808080 ; margin-left:10%;">PHP</p>
+          <div class="container">
+          <div class="skills php">60%</div>
+          </div>
+        </div>
+  
+        <div class="skils2">
+          <h3 style="margin-top:50px;margin-left:-150% ;">..</h3>
+          <p style="color:#8e04aafa ; margin-left:10%; width:400px;">PYTHON</p>
+          <div class="container">
+          <div class="skills python">80%</div>
+          </div>
+  
+          <p style="color:#f32167 ; margin-left:10%;">C++</p>
+          <div class="container">
+          <div class="skills c">65%</div>
+          </div>
+  
+          <p style="color: #ecca6e ; margin-left:10%;">Machine_learning</p>
+          <div class="container">
+          <div class="skills ml">65%</div>
+          </div>
+  
+          <p style="color:  #65a7a3 ; margin-left:10%;">DEEP_learning</p>
+          <div class="container">
+          <div class="skills dl">60%</div>
+          </div>
+  
+        </div>
+  
+      </div>
+
+
+
+   <div class="ngo">
+       <h3>My NGO.</h3>
+      <div id="content_ngo">
+        <div class="image">
+            <img class="img"  src="../static/images/ngo_logo.jpg" alt="">
+    
+        </div> 
+        <div class="image">
+            <img class="img" src="../static/images/ngo4.jpg" alt="">
+        </div> 
+        <div class="image">
+            <img class="img" src="../static/images/ngo1.jpg" alt="">
+            
+        </div>
+        <div class="image">
+            <img class="img" src="../static/images/ngo5.jpg" alt="">
+            
+        </div>
+        <div class="image">
+            <img class="img" src="../static/images/ngo3.jpg" alt="">
+            
+        </div>
+        <div class="image">
+                <video width="320" height="240" controls>
+                    <source src="../static/images/ngo_vid1.mp4" type="video/mp4">
+                    
+                </video>
+        </div>
+        <div class="image">
+            <video width="320" height="240" controls>
+                <source src="../static/images/ngo_vid2.mp4" type="video/mp4">
+                
+            </video>
+        </div>
+        <div class="image">
+            <video width="320" height="240" controls>
+                <source src="../static/images/ngo_vid3.mp4" type="video/mp4">
+                
+            </video>
+        </div>
+        <div class="image">
+            <video width="320" height="240" controls>
+                <source src="../static/images/ngo_vid4.mp4" type="video/mp4">
+                
+            </video>
+        </div>
+        <div class="ngo_discripdion">
+            <h2 style="margin-left: 20px ;margin-right:230px;color: coral;">&#9677;Youth of Varanasi (team 1999)..</h2>
+            <h2 style="text-align: center; color:white;">You Bring The Sunshine To Their Lives</h2>
+            <p>-Director : SAMEER KHAN</p>
+            <p>-Work for : slum area's children education , helth and also we are helping in improving thier living standord. </p>
+        </div>
+      </div>
+        <div class="next">
+            <p class="arow prev" onclick="prev()">&#8249;</p>
+            <p class="arow next" onclick="next()">&#8250;</p>
+        </div>
+    </div>
+
+
+    <h1 style="margin-top:10px;">About Me...</h1>
+    <div class="about" id="about_id">
+        <div class="about_image">
+           <img src="../static/images/about_image.jpg" alt="">
+        </div>
+        <div class="about_text">
+           <h2>..Sameer khan..</h2>
+           <div class="about_dob">
+           <p><span style="color:cornflowerblue">&#9673; DOB &#9654; </span><span style="color:white;"> 10-jul-2002</span></p>
+           <p style="margin-left:200px;"><span style="color:cornflowerblue;">&#9673; ADDRESS &#9654; </span><span style="color:white;"> Ballia , Uttarprades</span></p>
+           <p style="color:white;">&#9673;  I am a talented, ambitious and hardworking individual, with broad skills in web desining , machine learning , data visualization , social media and leading projects.</p>
+           <p style="color:white;">&#9673; A key strength is communication; building strong relationships with people in order to deliver the best results.</p>
+           <p style="color: white;">&#9673; Recently, I completed an Open degree, including Data science and Data visualization at the Open University <span style="color:cornflowerblue">International Institute of Information Technology, Bangalore (upgrade)</span>.</p>
+           </div>
+        </div>
+    </div>
+
+
+    <div class="survices">
+        <h1>My survices</h1>
+        <div class="surcies_contenor">
+            <div class="web_design">
+                <h3 style="color:cornflowerblue;">Web Designing</h3>
+                <p style="color: white;">I im good in web designing.I have lots of skils in java html and css.</p>
+            </div>
+            <div class="data_visual">
+                <h3 style="color:cornflowerblue;">Data_Visual</h3>
+                <p style="color: white;">I im also good in data visualization.I have lots of skils in matplotlib pandas numpy tensorflow powebi etc.</p>
+            </div>
+            <div class="data_science">
+                <h3 style="color:cornflowerblue;">Data_Science</h3>
+                <p style="color: white;">I im also good in data science.I have lots of skils in python matplotlib pandas numpy tensorflow flask etc.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <H1 id="cont">Contact Me..</H1>
+    <div class="contect">
+        <div class="contect_form">
+            <h3 style="color:cornflowerblue ; text-align: center;">EMAIL..</h3>
+            <p id="contact_p" style="color:white;font-size:14px"><span style="color:coral;font-size:18px">Note : </span>After clicking the send button
+                 wait for some time and then click OK on the alert to send the message. </p>
+            <form onsubmit="mail(); reset(); return false;">
+                <input type="text" placeholder="Name" class="name" id="name" required><br>
+                <input type="email" placeholder="Email" class="email" id="email" required><br>
+                <input type="number" placeholder="Phone" class="phone" id="phone" required><br>
+                <textarea id="sub1" name="" rows="4" cols="50" placeholder="Subject" required></textarea><br> 
+                <button type="submit" name="" id=""> send</button>
+               </form>
+        </div>
+        <div class="contect_logo">
+            <h3 style="color:cornflowerblue ; text-align: center;">Get in Touch</h3>
+            <P style="color:coral">EMAIL</P>
+            <p style="margin-top: -20px; color: white;">sameerkhan1ssk1@gmail.com<p>
+            <P style="color:coral">PHONE</P>
+            <p style="margin-top: -20px;color: white;">+919696196395<p>
+            <P style="color:coral">ADDRESS</P>
+            <p style="margin-top: -20px;color: white;">Amanpuri colony, sarnath .<br>varanasi<br>pin-221007<p>
+            <a style="color:#2196F3;" href="https://www.instagram.com/itssam.kha"><i class="fa-brands fa-square-instagram"> <span style="color:coral;font-size:10px"> Instagram</span></i></a>
+            <a style="margin-left:25% ; color:#2196F3;" href="https://www.facebook.com/sameer1ssk1"><i class="fa-brands fa-square-facebook"><span style="color:coral;font-size:10px"> Facebook</span></i></a>
+        </div>
+    </div>
+  </div>
+
+
+
+  <div class="fotter">
+    <div class="fotter_paira">
+        <p id="text">This portfolio is made with <i style="color:red;" class="fa-sharp fa-solid fa-heart"></i> by <span style="color:cornflowerblue;"> sameer khan </span></p>
+    </div>
+    <div class="fotter_icons">
+        <a href="https://www.instagram.com/itssam.kha"><i class="fa-brands fa-square-instagram"></i></a>
+        <a href="https://www.facebook.com/sameer1ssk1"><i class="fa-brands fa-square-facebook"></i></a>
+        <a href="https://www.linkedin.com/in/sameer-khan-514821178"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/itssameerkhan"><i class="fa-brands fa-github"></i></a>
+    </div>
+  </div>
+<script src="https://smtpjs.com/v3/smtp.js"></script> 
+<script src="../static/java_file.js"></script>
+</body>
+</html>

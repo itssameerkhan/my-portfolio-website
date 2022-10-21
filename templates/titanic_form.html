@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sameer</title>
+    <link rel="stylesheet" href="../static/titanic.css">
+</head>
+<body>
+    <div id="all">
+<form action="http://localhost:5000/app/titanik" method="post">
+    <div class="division" id="div1">
+    <label class="label" id="l1" for="numbers">Passenger class </label>
+    <select name="numbers" type="number" class="numbers" >
+        <option value="1">Upper</option>
+        <option value="2">Moderate</option>
+        <option value="3">Lower</option>
+      </select>
+    <!-- <input type="number" class="numbers" name="numbers" placeholder="enter number"><br> -->
+    </div>
+    <div class="division" id="div2">
+    <label class="label" id="l2" for="numbers1">Age</label>
+    <input type="number" class="numbers" id="i2" name="numbers1" placeholder="Age..." required><br>
+    </div>
+    <div class="division" id="div3">
+    <label class="label" id="l3" for="numbers2">Fare</label>
+    <input type="number" class="numbers" id="i3" name="numbers2" placeholder="Ticket fare" required><br>
+    <div class="division" id="div4">
+    <label class="label" id="l4" for="numbers3">Gender &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;::&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    <select name="numbers3" type="number" class="numbers" required>
+        <option value="0">Female</option>
+        <option value="1">Male</option>
+      </select>
+    <!-- <input type="number" class="numbers" name="numbers3" placeholder="enter number3"><br> -->
+    </div>
+
+    <input id="buttun" type="submit">
+</form>
+</div>
+</body>
+</html>

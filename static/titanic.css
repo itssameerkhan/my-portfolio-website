@@ -1,0 +1,43 @@
+.numbers{
+  margin:2%;
+  margin-left: 5px;
+}
+.label{
+  margin-left: 5px;
+  color:white;
+  margin: 10px;
+
+}
+#buttun{
+  margin-left: 5px;
+  color:black;
+  background-color:rgb(202, 79, 79);
+  margin-top: 10px;
+
+}
+#all{
+  background-color: transparent;
+  padding: 20px;
+  width: 250px;
+  align-items: auto;
+  margin-left: 200px;
+  margin-top: 15%;
+}
+body{
+  background-color:rgba(0, 0, 0, 0.829) ;
+  background-size: cover;
+  
+}
+#buttun:hover{
+  background:white;
+}
+#i2 {
+  width: 196px;
+}
+#i3{
+  width:196px;
+}
+.division{
+  margin-top: 10px;
+  
+}
